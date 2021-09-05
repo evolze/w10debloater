@@ -4,7 +4,7 @@ This is the Ultimate Windows 10 Script from a creation from multiple debloat scr
 ## My Additions
 
 - Enable Dark Mode Easily
-- Install Winget
-- O&O Shutup10 CFG and Run
+- Install Winget (from Microsoft Store)
+- Essential Tweak settings via O&O
 - Ability to install programs from PowerShell
 - Customize and remove features in Windows 10
