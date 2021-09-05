@@ -1,5 +1,5 @@
 ## DSIT Windows 10 Debloater Script
-This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from GitHub. I am building the script out to be a swiss army knife to help setup new machines and tweak existing ones saving time for all. 
+Come one, come all! This is an all-in-one script to easily install software without spending the time of downloading and installing each one. The purpose of this script is to debloat new installations of Windows 10 with ease. This repo has been modified and is specific for friends and family. 
 
 ## My Additions
 
