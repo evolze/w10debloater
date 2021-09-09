@@ -381,12 +381,12 @@ $bitwarden.height                = 30
 $bitwarden.location              = New-Object System.Drawing.Point(4,495)
 $bitwarden.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$msoffice                        = New-Object system.Windows.Forms.Button
-$msoffice.text                   = "Microsoft Office"
-$msoffice.width                  = 212
-$msoffice.height                 = 30
-$msoffice.location               = New-Object System.Drawing.Point(4,528)
-$msoffice.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$naps2                           = New-Object system.Windows.Forms.Button
+$naps2.text                      = "NAPS2 (Scanner)"
+$naps2.width                     = 212
+$naps2.height                    = 30
+$naps2.location                  = New-Object System.Drawing.Point(4,528)
+$naps2.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $wireshark                       = New-Object system.Windows.Forms.Button
 $wireshark.text                  = "Wireshark"
@@ -447,7 +447,7 @@ $Label5.location                 = New-Object System.Drawing.Point(61,544)
 $Label5.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',8)
 
 $Form.controls.AddRange(@($Panel1,$Panel2,$Label3,$Label15,$Panel4,$PictureBox1,$Label1,$Label4,$Panel3))
-$Panel1.controls.AddRange(@($brave,$firefox,$winrar,$discord,$m365grammar,$notepad,$gchrome,$vmwarew,$vlc,$steam,$nordvpn,$virtualbox,$Label2,$bitwarden,$msoffice,$wireshark,$epicgames,$eadesktop))
+$Panel1.controls.AddRange(@($brave,$firefox,$winrar,$discord,$m365grammar,$notepad,$gchrome,$vmwarew,$vlc,$steam,$nordvpn,$virtualbox,$Label2,$bitwarden,$naps2,$wireshark,$epicgames,$eadesktop))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$actioncenter,$darkmode,$visualfx,$onedrive,$lightmode,$removebloat,$WarningLabel,$Label5))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
 $Panel3.controls.AddRange(@($essentialundo,$EActionCenter,$ECortana,$RBackgroundApps,$HTrayIcons,$EClipboardHistory,$ELocation,$InstallOneDrive,$yourphonefix,$reinstallbloat))
@@ -546,10 +546,10 @@ $bitwarden.Add_Click({
     if($?) { Write-Host "Installed Bitwarden" }
 })
 
-$msoffice.Add_Click({
-    Write-Host "Installing Microsoft Office"
-    winget install Microsoft.Office | Out-Host
-    if($?) { Write-Host "Installed Microsoft Office" }
+$naps2.Add_Click({
+    Write-Host "Installing NAPS2 (Scanner)"
+    winget install Cyanfish.NAPS2 | Out-Host
+    if($?) { Write-Host "Installed NAPS2 (Scanner)" }
 })
 
 $openshell.Add_Click({
